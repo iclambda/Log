@@ -1,0 +1,21 @@
+
+android animator some times better then animate,animator use reflect change target's property,
+so if target is a view , it's property will change when animate is process.
+
+animator=AnimatorInflater.loadAnimator
+
+animation=AnimationUtils.AnimationUtils
+
+animator.with().before.after.playWith
+
+<?xml version="1.0" encoding="utf-8"?>
+<set  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+    android:duration="500"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:propertyName="xFraction"
+    android:valueFrom="0.0"
+    android:valueTo="-1.0"
+    android:valueType="floatType" />
+</set>
+
